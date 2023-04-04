@@ -1,0 +1,210 @@
+<!doctype html>
+<html lang ="en">
+<head>
+
+    <meta charset = "UTF-8">
+    <meta http-equiv="X-UA-Compatible" content ="IE =edge">
+    <meta name ="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant </title>
+
+    
+    <! -- font awesome cdn link -->
+
+    <link rel="stylesheet" >
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+     
+</head>
+<style type = "text/css">
+
+body 
+{
+    background-color: rgb(53, 10, 10);
+}
+{
+    margin : 0;
+    padding : 0;
+}
+.container-fluid
+{
+width: 100%;
+height: 100vh;
+background : linear-gradient(to left, rgba(0,0,0,0.5)50%, rgba(0,0,0,0.5)50%),url(bg.jpg);
+background-size : cover;
+background-repeat : no-repeat;
+}
+.container
+{
+width : 1200px;
+height: 80px;
+
+margin: auto;
+display: flex;
+justify-content: space-between;
+align-items: right;
+float : right;
+padding : 0px 25 px;
+
+}
+.container h2
+{
+    font-family: arial;
+    font-size : 30px;
+    color: #fff;
+    cursor: pointer;
+}
+.container ul
+{
+ display : flex;
+ justify-content: center;
+ align-items: center;
+}
+.container ul li
+{
+font-family : arial;
+ color : #fff;
+ list-style: none;  
+ margin-right: 50px;
+ font-weight : bold;
+ cursor : pointer;
+ transition : 0.5s;
+}
+
+.container ul li:hover
+{
+    color : #30d300;
+}
+
+
+.text-box{
+color : #fff;
+position : absolute;
+bottom : 8%;
+
+}
+.text-box p{
+    font-size : 50px;
+    font-weight : 600;
+}
+
+.text-box h1{
+    font-size : 120px;
+    line-height : 120px;
+    margin-left : -10px;
+    color: transparent;
+    -webkit-text-stroke : 1px #fff; 
+    background : url(bars.jpg);
+    -webkit-background-clip : text; 
+    background-position : 0 0;
+    animation : back 20s linear infinite;
+}
+
+@keyframes back{
+    100%{
+        background-position : 2000px 0;
+    }
+}
+
+.text-box h3{
+    font-size : 40px;
+    font-weight : 500;
+}
+
+.content 
+{
+    width: 1200px ;
+    height: 100vh;
+
+    margin : auto;
+}
+
+.Usage{
+    background-color: #CCCCFF;
+    padding-top : 30px;
+}
+
+.Usage p
+{
+    font-family :arial;
+    color : black;
+    font-size : a000;
+    line-height: 30px;
+    padding-top : 20px;
+    align-content: flex-start;
+    font-size: 50;
+}
+
+.Image{
+   
+    border-radius: none;
+    padding-top : 50; 
+    float : right ;
+    border: 5px solid black;
+
+    /* animation: slideright 1s linear backwards; */
+   
+}
+
+/*
+@keyframes slideright{
+   0%{
+       transform : translate(100px);
+       opacity : 0;
+   }
+   100%{
+       transform : translate(0px);
+       opacity : 1;
+   }
+}
+*/
+
+.about
+{
+    border-radius: none;
+    padding-top : 300px; 
+    align-items: center ;
+    border: none;
+   
+}
+
+
+
+</style>
+
+<body>
+
+    
+<div class = "container-fluid">
+ <div class = "container">
+   
+     <ul>
+       <a href=  "#about"> <li> About Us </li> </a>
+        <a href = "cuisine.html"> <li> Cuisines</li></a> 
+        <a href = "bookings.html"> <li> Bookings </li> </a>
+         <a href = "branches.html"> <li> Branches</li> </a>
+     </ul>
+   
+
+</div>
+<div class ="content">
+   
+  <div class = "text-box">  <p> DINE </p> <h1> IN </h1>  <h3>PEACE</h3> </div>
+ 
+    </div>
+</div>
+
+ <div class = "about">
+ <align  = center> <img src="About_us.jpg" id="about" height = "400" width = "1500" > </align> 
+</div>
+
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+   AOS.init();
+</script>
+
+</body>
+</html>

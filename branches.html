@@ -1,0 +1,152 @@
+<html>
+<head>
+    <title>Branches</title>
+    <meta charset = "UTF-8">
+    <meta http-equiv="X-UA-Compatible" content ="IE =edge">
+    <meta name ="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type ="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+   <link rel="stylesheet" type ="text/css" href="css/style.css">
+   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+</head>
+
+<style type = "text/css">
+ *{
+    margin : 0px;
+    padding : 0px;
+    box-sizing : border-box;
+    }
+
+    body {
+        width: 100% ;
+        background-color: #9a5a1e;
+        font-family : sans-serif;
+    }
+    .title h1{
+        text-align : center;
+        padding-top: 50px;
+        font-size: 42px;
+
+    }
+    .title h1::after{
+        content : "";
+        height : 4px;
+        width : 230px;
+        background-color : #000;
+        display : block;
+        margin : auto;
+    }
+    .services{
+        width : 85%;
+        display : flex;
+        justify-content : space-between;
+        align-items : center;
+        margin : 75px ;
+        text-align : center;
+    }
+    .card{
+        padding : 25px;
+        width : 100%;
+        display : flex;
+        justify-content : space-between;
+        align-items : center ;
+        flex-direction: column;
+        margin : 0px 40px;
+        background-color: #efefef;
+        border-radius : 10px;
+        cursor : pointer;
+    }
+    .card:hover{
+        background-color : rgb(87, 38, 38);
+        transition : 0.4s ease;
+    }
+    .card .icon{
+      
+        font-size : 35px;
+        margin-bottom : 10px;
+    }
+    .card h2{
+        font-size : 28px;
+        color : black; 
+        margin-bottom : 20px;
+
+    }
+    .card p{
+        padding : 20px;
+        font-size : 17px;
+        margin-bottom : 30px;
+        line-height : 1.5;
+        color : #5e5e5e;
+    }
+
+    .button {
+        padding-top: 15px;
+        background-color : burlywood;
+        font-size : 15px;
+         text-decoration : none ;
+         color : #fff;
+         padding : 8px 12px;
+          border-radius : 5px;
+          letter-spacing : 1px;
+
+    }
+  .button:hover{
+      background-color : black;
+      transition : 0.4s ease;
+
+  }
+  @media screen and (max-width: 940px){
+      .services{
+         
+          display : flex;
+          flex-direction: column;
+
+      }
+
+      .card {
+          width : 85%;
+          display : flex;
+          margin : 20px 0px;
+            
+      }
+  }
+</style>
+
+<body >
+    
+
+    <div class ="section">
+        <div class = "title">
+            <h1> Join us over</h1>
+        </div>
+        <div class = "services">
+            <div class ="card" data-aos="fade-right">
+                
+                <h2>Delhi</h2>
+               <div class="image" > <img src="Delhi.webp" height=200px > </div>
+                 <a href="https://www.tripadvisor.in/Attraction_Review-g297615-d7984241-Reviews-DLF_Cyber_Hub-Gurugram_Gurgaon_Gurgaon_District_Haryana.html" class="button"> Location </a>
+            </div>
+
+            <div class ="card" data-aos="fade-up">
+                
+                <h2>Mumbai</h2>
+                <div class="image" > <img src="mumbai.jpg" height=200px > </div>
+                 <a href="https://lbb.in/delhi/cyber-hub-social/" class="button"> Location </a>
+            </div>
+
+            <div class ="card" data-aos="fade-left">
+                
+                <h2>Chennai</h2>
+                <div class="image" > <img src="chennai.webp" height=200px> </div>
+                 <a href="https://www.dlfcybercitychennai.com" class="button"> Location </a>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+   AOS.init();
+</script>
+
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!doctype html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookings</title>
+
+    <link rel="stylesheet" href="css/form.css">
+
+</head>
+<style>
+
+body{
+    background-color: darkgoldenrod;
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('dsa.jpg.webp');
+    background-size: cover;
+    background-position: center;
+    font-family: 'roboto', sans-serif;
+
+}
+
+
+.form h1{
+    text-align: center;
+    color: black;
+}
+.submit-button{
+    background-color: coral;
+}
+</style>
+
+<body>
+
+    <div class="alert-box">
+        <p class="alert"></p>
+    </div>
+
+
+    <div class="form">
+        <h1 class="heading">BOOK A TABLE </h1>
+        <input type="text" placeholder="Name" autocomplete="off" class="name" required>
+        <input type="datetime" placeholder="Date and Time" autocomplete="off" class="datetime" required>
+        <input type="number" placeholder="No. of people" autocomplete="off" class="number" required>
+        <input type="text" placeholder="Place" autocomplete="off" class="place" required> 
+        <button class="submit-btn">Book</button>
+       
+    </div>
+
+    <script src="js/form.js"></script>
+    
+</body>
+</html>
